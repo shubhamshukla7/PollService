@@ -112,6 +112,7 @@ public class PollService extends IntentService {
 		HttpClient httpclient = new DefaultHttpClient();
 		//HttpGet httpget = new HttpGet("http://demo.eden.sahanafoundation.org/eden/supply/item/10");
 		HttpGet httpget = new HttpGet("http://108.229.97.42:8990/new.html");
+		Log.i("After http get request...");
     	HttpResponse response = null;
 		try {
 			response = httpclient.execute(httpget);
